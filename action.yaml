@@ -74,7 +74,7 @@ outputs:
 
 runs:
   using: docker
-  image: 197309122981.dkr.ecr.us-west-2.amazonaws.com/github-actions:latest
+  image: docker://197309122981.dkr.ecr.us-west-2.amazonaws.com/github-actions:latest
   entrypoint: /entrypoints/plan.sh
 
 branding:
