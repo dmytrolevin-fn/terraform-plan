@@ -74,7 +74,7 @@ outputs:
 
 runs:
   using: docker
-  image: docker://danielflook/terraform-github-actions@sha256:4aa6179df0f08cabedbf3b340b419adf5c32854619be6926492f48048946ebb8
+  image: 197309122981.dkr.ecr.us-west-2.amazonaws.com/github-actions:latest
   entrypoint: /entrypoints/plan.sh
 
 branding:
