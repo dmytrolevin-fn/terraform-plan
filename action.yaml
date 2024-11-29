@@ -76,6 +76,11 @@ runs:
   using: docker
   image: docker://197309122981.dkr.ecr.us-west-2.amazonaws.com/github-actions:latest
   entrypoint: /entrypoints/plan.sh
+  env:
+    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    AWS_REGION: us-west-2
+  
 
 branding:
   icon: globe
